@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const HomeSection1 = () => {
     return ( 
-        <div className="flex flex-col md:flex-row p-4">
+        <div className="flex flex-col md:flex-row p-10">
             {/*Box1*/}
             <div className=" h-[300px] w-full flex justify-center items-center">
                 <div className="bg-gray-700 h-[170px] w-[250px] z-[2] flex justify-center items-center">

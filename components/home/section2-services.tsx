@@ -67,19 +67,19 @@ const data = [
   {
     category: "Built-In Entertainment Systems",
     title: "Maps for your iPhone 15 Pro Max.",
-    src: "",
+    src: "/images/outdoor.jpg",
     content: <DummyContent />,
   },
   {
     category: "YorkTowne Dealer",
     title: "Photography just got better.",
-    src: "",
+    src: "/images/outdoor.jpg",
     content: <DummyContent />,
   },
   {
     category: "Hiring",
     title: "Hiring for a Staff Software Engineer",
-    src: "",
+    src: "/images/outdoor.jpg",
     content: <DummyContent />,
   },
 ];

@@ -80,7 +80,7 @@ const MenuBar = () => {
 
                 <NavigationMenuItem className="pr-3">
                     <Link href='/about'>
-                        Blog
+                        Gallery
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="pr-3">
@@ -89,7 +89,7 @@ const MenuBar = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href='/contact'>
+                    <Link href='/contact-us'>
                         Contact
                     </Link>
                 </NavigationMenuItem>

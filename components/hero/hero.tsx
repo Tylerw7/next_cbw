@@ -17,8 +17,8 @@ const Hero = () => {
             <p className="text-white text-[1.5rem] w-[30rem] mb-[50px]">
               Discover custom cabinets crafted to fit your style and needs, combining beauty and functionality.
             </p>
-            <Button variant='outline' className="w-[40%] text-[1.5rem]" >
-            <a className='scroll-smooth' href='#contact'>Learn More</a>
+            <Button  className="w-[40%] text-[1.5rem] bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black" >
+            <a className='scroll-smooth' href='#contact'>Get a Quote</a>
             </Button>
           </div>
     </div>

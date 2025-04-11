@@ -1,5 +1,6 @@
 
 
+
 "use client";
 import React, {
   useEffect,
@@ -93,7 +94,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-      <div className="relative w-full">
+      <div className="relative w-full ">
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
@@ -108,7 +109,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              "max-w-7xl mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
+              "max-w-full mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -169,6 +170,11 @@ export const Card = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const { onCardClose } = useContext(CarouselContext);
 
+  const handleClose = () => {
+    setOpen(false);
+    onCardClose(index);
+  };
+
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -184,19 +190,16 @@ export const Card = ({
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
+  }, [open, handleClose]); //handleClose was originally not not in the useEffect 
 
   // @ts-expect-error: This is needed due to a type mismatch in JSX.Element[] inference.
   useOutsideClick(containerRef, () => handleClose());
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  //const handleOpen = () => {
+    //setOpen(true);
+  //};
 
-  const handleClose = () => {
-    setOpen(false);
-    onCardClose(index);
-  };
+  
 
   return (
     <>

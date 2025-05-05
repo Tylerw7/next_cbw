@@ -1,3 +1,4 @@
+import KitchenSectionTwo from "@/components/kitchen-page/kitchen-section-2";
 import KitchenHero from "@/components/kitchen-page/kitchen_hero";
 import Section1 from "@/components/kitchen-page/section-1";
 
@@ -6,6 +7,7 @@ const CustomKitchens = () => {
         <>
         <KitchenHero />
         <Section1 />
+        <KitchenSectionTwo />
         </>
      );
 }

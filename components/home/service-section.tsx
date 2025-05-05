@@ -10,7 +10,7 @@ const HomeServiceAreas = () => {
         <div className="w-[100vw] h-[100vh] lg:h-[80vh] flex justify-center items-center mb-[100px] ">
             <div className="flex flex-col lg:flex-row w-[90%] lg:w-[80%] h-full lg:h-[80%] bg-gray-200 rounded-3xl p-4 justify-center items-center gap-4">
                 <div className="relative w-full lg:w-[50%] h-full rounded-l-3xl">
-                    <Image src="/images/sarasota.jpg" fill={true} alt="Sarasota county" className="object-cover rounded-3xl " />
+                    <Image src="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20140620_152752.jpg" fill={true} alt="Sarasota county" className="object-cover rounded-3xl " />
                 </div>
                 <div className="flex flex-col bg-gray-300 w-full lg:w-[50%] h-full rounded-3xl items-center">
                     <div className="w-full h-full p-4 flex flex-col gap-4">

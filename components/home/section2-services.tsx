@@ -48,14 +48,14 @@ const data = [
   {
     category: "Custom Cabinets",
     title: "You can do more with AI.",
-    src: "/images/kitchen.jpg",
+    src: "https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20200605_142432.jpg",
     content: '/kitchen',
   },
   {
     category: "Closet Systems",
     title: "Enhance your productivity.",
-    src: "/images/kitchen2.jpg",
-    content: <DummyContent />,
+    src: "https://cloudphotosone.s3.us-east-1.amazonaws.com/closet.jpg",
+    content: '/closets',
   },
   {
     category: "Out Door Kitchens",
@@ -66,9 +66,9 @@ const data = [
 
   {
     category: "Built-In Entertainment Systems",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "/images/outdoor.jpg",
-    content: <DummyContent />,
+    title: "Sleek Built-in entertainment systems",
+    src: "https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20230906_105706.jpg",
+    content: '/built-in-systems',
   },
   {
     category: "YorkTowne Dealer",

@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { Badge } from "./badge";
+
 
 interface CarouselProps {
     // @ts-expect-error: This is needed due to a type mismatch in JSX.Element[] inference.

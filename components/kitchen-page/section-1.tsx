@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { Separator } from "../ui/separator";
+
 
 const Section1 = () => {
     return ( 

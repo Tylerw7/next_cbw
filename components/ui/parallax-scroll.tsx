@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 "use client";
 import { useScroll, useTransform } from "motion/react";
 import { useRef, useState } from "react";
@@ -13,6 +15,7 @@ export const ParallaxScroll = ({
   images: string[];
   className?: string;
 }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const gridRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: gridRef, // remove this if your container is not fixed height

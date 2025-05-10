@@ -1,11 +1,30 @@
-import { Card, CardContent } from "../ui/card";
+import { Button } from "../ui/button";
+import Image from "next/image";
 
 const WhyCustom = () => {
     return ( 
-        <div>
-            <Card>
-                <CardContent></CardContent>
-            </Card>
+        <div className="w-[95vw] flex flex-col md:flex-row justify-center items-center  m-auto rounded-sm">
+            <div className="h-full w-full md:w-[50%] p-8">
+            <div className="relative w-full h-[80vh]">
+                <Image
+                    src="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20230930_124148.jpg"
+                    alt="Custom cabinet in Sarasota FL"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+                </div>
+            </div>
+            
+            <div className="h-full w-full md:w-[50%] flex flex-col p-5">
+                <div className="bg-[#ffd21e] rounded-md p-1 font-bold w-fit text-[0.8rem]">Custom Kitchens</div>
+                <h2 className="font-bold text-[2.5rem]">Built Around Your Lifestyle</h2>
+                <p className="mb-[25px]">Your kitchen is more than just a place to cook—it&apos;s the heart of your home. Our custom kitchen cabinets combine beauty, functionality, and smart design. Whether you&apos;re remodeling or starting new, we&apos;ll create a kitchen that reflects your taste and serves your needs.</p>
+                <p className="font-bold text-[1.2rem]">Popular Cabinet Styles We Offer:</p>
+                
+                <Button className="w-[200px] hover:cursor-pointer mb-[25px]">Find out more</Button>
+            </div>
+            
         </div>
      );
 }

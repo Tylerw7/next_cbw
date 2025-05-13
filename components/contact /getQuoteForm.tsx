@@ -1,18 +1,38 @@
 "use client"
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
 import { Mail, MapPinHouse, Phone } from "lucide-react";
 import { quoteSubmitionForm } from "@/actions/form-action";
+import { toast } from "sonner";
 
 const QuoteForm = () => {
     const [state, formAction, isPending] = useActionState(quoteSubmitionForm, {
         success: false,
         message: ''
     })
+
+
+    // Show toast when message is set
+        useEffect(() => {
+            if (state?.message) {
+            const now = new Date().toLocaleString("en-US", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+            });
+
+            toast(state.success ? "✅ Form Submitted We will Contact You Soon!" : "❌ Submission Failed", {
+                description: `Submitted on ${now}`,
+            });
+            }
+        }, [state]);
 
 
     return ( 
@@ -59,7 +79,9 @@ const QuoteForm = () => {
                             />
                         </div>
 
-                        <Button type="submit" className="w-[85%] mb-[25px]">Send</Button>
+                        <Button type="submit" className="w-[85%] mb-[25px] disabled={isPending}>">
+                            {isPending ? "Submitting..." : "Submit Form"}
+                        </Button>
                         
                     </form>
                 </div>

@@ -13,8 +13,8 @@ const CustomKitchens = () => {
         <Section1 />
         <KitchenSectionTwo />
         <ParallaxGallery />
-        <WhyCustom />
         <ServingSWF />
+        <WhyCustom />
         <KitchenContact />
         </>
      );

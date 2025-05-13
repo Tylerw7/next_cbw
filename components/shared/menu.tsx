@@ -49,8 +49,8 @@ const MenuBar = () => {
                         </li>
                         <li>
                             <NavigationMenuLink asChild>
-                                <Link href='/'>
-                                <h2 className="font font-semibold">Heading</h2>
+                                <Link href='/closets'>
+                                <h2 className="font font-semibold">Closet Systems</h2>
                                 <p className="text-muted-foreground">This is where the content will go.</p>
                                 </Link>
                             </NavigationMenuLink>

@@ -59,7 +59,9 @@ const NavBar = () => {
                     <>
                     <MenuBar />
                     <div>
-                        <Button>Sign In</Button>
+                        <Link href='contact-us'>
+                        <Button>Contact</Button>
+                        </Link>
                     </div>
                     </>
                 )}

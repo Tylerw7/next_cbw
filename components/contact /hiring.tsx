@@ -1,11 +1,14 @@
 "use client"
 
-import { useActionState } from "react";
+import { useActionState, useEffect} from "react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
 import { hiringApplicationForm } from "@/actions/form-action";
+import { toast } from "sonner";
+
+
 
 
 
@@ -15,6 +18,28 @@ const Hiring = () => {
         success: false,
         message: ""
       });
+
+      
+
+      // Show toast when message is set
+    useEffect(() => {
+        if (state?.message) {
+        const now = new Date().toLocaleString("en-US", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+        });
+
+        toast(state.success ? "✅ Application Submitted" : "❌ Submission Failed", {
+            description: `Submitted on ${now}`,
+        });
+        }
+    }, [state]);
+
+
 
     return ( 
         <div className="bg-[#F5F5F5] w-[100vw] flex flex-col justify-center items-center">
@@ -80,18 +105,22 @@ const Hiring = () => {
                             {isPending ? "Submitting..." : "Submit Application"}
                         </Button>
                         
-                        {state.message && (
-                            <p
-                                className={`text-sm mt-2 px-4 py-2 rounded-md ${
-                                state.success
-                                    ? 'bg-green-100 text-green-800 border border-green-300'
-                                    : 'bg-red-100 text-red-800 border border-red-300'
-                                }`}
-                            >
-                                {state.message}
-                            </p>
-                        )}
+                        
                     </form>
+                    <Button
+      variant="outline"
+      onClick={() =>
+        toast("Event has been created", {
+          description: "Sunday, December 03, 2023 at 9:00 AM",
+          action: {
+            label: "Undo",
+            onClick: () => console.log("Undo"),
+          },
+        })
+      }
+    >
+      Show Toast
+    </Button>
                 </div>
      );
 }

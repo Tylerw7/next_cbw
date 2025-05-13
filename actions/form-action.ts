@@ -1,7 +1,7 @@
 'use server'
 
 import {Resend} from 'resend'
-import { quoteFormValidator } from '@/lib/validators'
+import { quoteFormValidator,formSchema } from '@/lib/validators'
 
 
 //Resend connection
@@ -46,4 +46,43 @@ export const quoteSubmitionForm = async (prev: unknown, formData: FormData) => {
         console.log(err)
         return {success: false, message: 'Email not sent, error.'}
     }
+}
+
+
+
+//Form for job application below
+export const hiringApplicationForm = async (prev: unknown, formData: FormData) => {
+    try {
+        const form = formSchema.parse({
+          first_name: formData.get("first_name"),
+          last_name: formData.get("last_name"),
+          phone: formData.get("phone"),
+          email: formData.get("email"),
+          startdate: formData.get("startdate"),
+          experience: formData.get("experience"),
+        });
+    
+        // Send email
+        await resend.emails.send({
+          from: "Cabinetry by Wettach <info@preciouswettachart.com>",
+          to: form.email,
+          subject: `New Job Application: ${form.first_name} ${form.last_name}`,
+          html: `
+            <div style="font-family: sans-serif; padding: 20px;">
+              <img src="https://preciouswettachart.com/images/black_logo.png" alt="Company Logo" width="150" />
+              <h2>New Job Application</h2>
+              <p><strong>Name:</strong> ${form.first_name} ${form.last_name}</p>
+              <p><strong>Email:</strong> ${form.email}</p>
+              <p><strong>Phone:</strong> ${form.phone}</p>
+              <p><strong>Experience:</strong> ${form.experience}</p>
+              <p><strong>Start Date:</strong> ${form.startdate || "Not specified"}</p>
+            </div>
+          `,
+        });
+    
+        return { success: true, message: "Application sent successfully." };
+      } catch (error) {
+        console.error("Hiring form error:", error);
+        return { success: false, message: "Something went wrong. Please try again." };
+      }
 }

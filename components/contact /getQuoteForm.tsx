@@ -25,7 +25,7 @@ const QuoteForm = () => {
                     <form action={formAction} className="p-4 gap-4 flex flex-col w-[80%] bg-white rounded-2xl mb-[50px] mt-[50px] items-center justify-center">
 
                         <div className="flex flex-col gap-1.5 w-[85%]">
-                        <Label htmlFor="message">Name</Label>
+                        <Label htmlFor="message" className="mt-[25px]">Name</Label>
                         <Input 
                             className=""
                             type="text"
@@ -59,7 +59,7 @@ const QuoteForm = () => {
                             />
                         </div>
 
-                        <Button type="submit" className="w-[85%]">Send</Button>
+                        <Button type="submit" className="w-[85%] mb-[25px]">Send</Button>
                         
                     </form>
                 </div>
@@ -71,7 +71,7 @@ const QuoteForm = () => {
                         </div>
                         <div className="flex flex-col p-4">
                             <Label className="text-muted-foreground text-[1.2rem]">Email</Label>
-                            <p className="text-[#F5F5F5]">springbayconstruction@yahoo.com</p>
+                            <p className="text-[#F5F5F5] text-[1.1rem]">springbayconstruction@yahoo.com</p>
                         </div>
                     </div>
 
@@ -81,7 +81,7 @@ const QuoteForm = () => {
                     </div> 
                      <div className="flex flex-col p-4">
                         <Label className="text-muted-foreground text-[1.2rem]">Location</Label>
-                        <p className="text-[#F5F5F5]">1746 10th Way Unit B Sarasota, FL 34243</p>
+                        <p className="text-[#F5F5F5] text-[1.1rem]">1746 10th Way Unit B Sarasota, FL 34243</p>
                      </div>
                     </div>
 
@@ -91,7 +91,7 @@ const QuoteForm = () => {
                      </div> 
                      <div className="flex flex-col p-4">
                         <Label className="text-muted-foreground text-[1.2rem]">Phone</Label>
-                        <p className="text-[#F5F5F5]">941-232-2817</p>
+                        <p className="text-[#F5F5F5] text-[1.1rem]">941-232-2817</p>
                      </div>
                     </div>
                 </div>

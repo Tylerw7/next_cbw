@@ -58,10 +58,10 @@ const data = [
     content: '/closets',
   },
   {
-    category: "Out Door Kitchens",
+    category: "Out Door Cabinets",
     title: "Launching the new Apple Vision Pro.",
     src: "/images/outdoor.jpg",
-    content: <DummyContent />,
+    content: "outdoor-cabinets",
   },
 
   {
@@ -74,12 +74,12 @@ const data = [
     category: "YorkTowne Dealer",
     title: "Photography just got better.",
     src: "/images/outdoor.jpg",
-    content: <DummyContent />,
+    content: "",
   },
   {
     category: "Hiring",
     title: "Hiring for a Staff Software Engineer",
     src: "/images/outdoor.jpg",
-    content: <DummyContent />,
+    content: "/work-with-us",
   },
 ];

@@ -43,8 +43,8 @@ const Hiring = () => {
 
     return ( 
         <div className="bg-[#F5F5F5] w-[100vw] flex flex-col justify-center items-center">
-                    <h2 className="font-bold text-[2.5rem] text-center mt-[25px]">Tell us what you are looking for</h2>
-                    <p className="w-[60%] text-muted-foreground">Not sure where to start? Just let us know what you&apos;re thinking — big or small. We&apos;re here to help with ideas, designs, and expert craftsmanship.</p>
+                    <h2 className="font-bold text-[2.5rem] text-center mt-[25px]">Looking to Join Our Team?</h2>
+                    <p className="w-[60%] text-muted-foreground">We&apos;re always on the lookout for skilled, passionate individuals. Whether you&apos;re just starting out or bringing years of experience, we&apos;d love to hear what you&apos;re looking for in your next role — big or small. Tell us your strengths, your goals, and how you see yourself contributing. We&apos;re here to build great things, together.</p>
                     {/*FORM*/}
                     <form action={formAction} className="p-4 gap-4 flex flex-col w-[80%] sm:w-[50%] bg-white rounded-2xl mb-[50px] mt-[50px] items-center justify-center">
 

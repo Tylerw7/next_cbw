@@ -1,6 +1,7 @@
 import { CircleCheck } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -21,12 +22,14 @@ const ClosetDescription = () => {
                             <li className="flex gap-3 p-2"><CircleCheck className="text-green-400"/>Shoe racks and accessory organizers</li>
                             <li className="flex gap-3 p-2"><CircleCheck className="text-green-400"/>Integrated lighting</li>
                         </ul>
+                        <Link href='contact-us'>
                         <Button className="w-[200px] hover:cursor-pointer mb-[25px]">Find out more</Button>
+                        </Link>
                     </div>
                     <div className="h-full w-full md:w-[50%] p-8">
                     <div className="relative w-full h-[80vh]">
                         <Image
-                            src="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20230930_124148.jpg"
+                            src="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/closet1.3.jpg"
                             alt="Custom cabinet in Sarasota FL"
                             fill
                             className="object-cover"

@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const ClosetHero = () => {
     return ( 
-        <div className="p-[10px] w-full h-[110vh] md:h-[60vh] bg-cover bg-center flex flex-col justify-center items-center text-center relative" style={{ backgroundImage: 'url("https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20250404_120115.jpg")' }} >
+        <div className="p-[10px] w-full h-[110vh] md:h-[60vh] bg-cover bg-center flex flex-col justify-center items-center text-center relative" style={{ backgroundImage: 'url("https://cabinetrybywettach.s3.us-east-1.amazonaws.com/closet1.1.jpg")' }} >
         {/* Overlay to dim the background */}
         <div className="absolute inset-0 bg-black/40"></div>
 

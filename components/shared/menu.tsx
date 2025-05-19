@@ -80,11 +80,6 @@ const MenuBar = () => {
 
                 <NavigationMenuItem className="pr-3">
                     <Link href='/about'>
-                        Gallery
-                    </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem className="pr-3">
-                    <Link href='/about'>
                         About
                     </Link>
                 </NavigationMenuItem>

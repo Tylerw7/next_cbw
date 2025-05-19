@@ -61,7 +61,7 @@ const data = [
     category: "Out Door Cabinets",
     title: "Launching the new Apple Vision Pro.",
     src: "/images/outdoor.jpg",
-    content: "outdoor-cabinets",
+    content: "out-door-cabinets",
   },
 
   {
@@ -74,7 +74,7 @@ const data = [
     category: "YorkTowne Dealer",
     title: "Photography just got better.",
     src: "/images/outdoor.jpg",
-    content: "",
+    content: "york",
   },
   {
     category: "Hiring",

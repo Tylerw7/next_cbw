@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/40"></div>
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col justify-center items-center h-full">
+          <div className="relative z-10 flex flex-col justify-center items-center h-full p-2">
             <h2 className="text-white font-bold text-[6rem] pb-[10px]">Cabinetry By Wettach</h2>
             <p className="text-white text-[1.5rem] w-[30rem] mb-[50px]">
               Discover custom cabinets crafted to fit your style and needs, combining beauty and functionality.

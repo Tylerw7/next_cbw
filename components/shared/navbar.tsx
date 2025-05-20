@@ -50,8 +50,14 @@ const NavBar = () => {
                         <SheetContent>
                             <SheetHeader>
                                 <SheetTitle>Main menu</SheetTitle>
-                                <SheetDescription>
-                                    This is where the menu will go.
+                                <SheetDescription className="flex flex-col">
+                                    <a href="/" className="text-black hover:text-grey-500 text-[1.1rem]">Home</a>
+                                    <a href="/kitchen" className="text-black hover:text-grey-500 text-[1.1rem]">Kitchens</a>
+                                    <a href="/closets" className="text-black hover:text-grey-500 text-[1.1rem]">Closets</a>
+                                    <a href="/out-door-cabinets" className="text-black hover:text-grey-500 text-[1.1rem]">Out Door Cabinets</a>
+                                    <a href="/entertainment-systems" className="text-black hover:text-grey-500 text-[1.1rem]">Entertainment Systems</a>
+                                    <a href="/about" className="text-black hover:text-grey-500 text-[1.1rem]">About</a>
+                                    <a href="/contact-us" className="text-black hover:text-grey-500 text-[1.1rem]">Contact</a>
                                 </SheetDescription>
                             </SheetHeader>
                         </SheetContent>

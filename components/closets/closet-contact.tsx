@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-const ClosetContact = () => {
+const ClosetContact = () => { 
     return ( 
         <div className="w-[100vw] h-[60vh] object-cover" >
             <div className="w-full h-full  flex flex-col justify-center items-center">

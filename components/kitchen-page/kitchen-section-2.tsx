@@ -1,6 +1,7 @@
 import { CircleCheck } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const KitchenSectionTwo = () => {
     return ( 
@@ -17,7 +18,7 @@ const KitchenSectionTwo = () => {
                     <li className="flex gap-3 p-2"><CircleCheck className="text-green-400"/>European frameless cabinets</li>
                     <li className="flex gap-3 p-2"><CircleCheck className="text-green-400"/>Built-in pantries and islands</li>
                 </ul>
-                <Button className="w-[200px] hover:cursor-pointer mb-[25px]">Find out more</Button>
+                <Button className="w-[200px] hover:cursor-pointer mb-[25px]"><Link href='contact-us'>Find out more</Link></Button>
             </div>
             <div className="h-full w-full md:w-[50%] p-8">
             <div className="relative w-full h-[80vh]">

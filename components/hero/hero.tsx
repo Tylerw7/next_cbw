@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 
@@ -18,7 +19,7 @@ const Hero = () => {
               Discover custom cabinets crafted to fit your style and needs, combining beauty and functionality.
             </p>
             <Button  className="w-[40%] text-[1.5rem] bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black" >
-            <a className='scroll-smooth' href='#contact'>Get a Quote</a>
+            <Link href='/contact-us'>Get a Quote</Link>
             </Button>
           </div>
     </div>

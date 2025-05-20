@@ -9,7 +9,7 @@ const AboutWhyUs = () => {
 
     const CardComponent = ({title, description, content}: {title: string, description: string, content: string}) => {
         return (
-            <Card className="min-w-[400px] max-w-[450px] text-center bg-[#333333] border-none">
+            <Card className="min-w-[400px] max-w-[450px] h-[350px] text-center bg-[#333333] border-none">
                 <CardHeader>
                     <CardTitle className="text-[#ffd21e] text-[1.6rem]">{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>

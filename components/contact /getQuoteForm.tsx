@@ -86,7 +86,8 @@ const QuoteForm = () => {
                     </form>
                 </div>
                 <div className="bg-[#333333] w-full md:w-[50%] flex flex-col gap-10 justify-center pl-12">
-                    <h3 className="text-[2.5rem] tracking-wider font-semibold text-[#F5F5F5] text-center">Contact</h3>
+                    <h3 className="text-[3rem] tracking-wider font-semibold text-[#F5F5F5] text-center">Contact</h3>
+                    <p className="text-[#ffd21e] text-center text-[1.1rem] font-semibold">** We accept visits by appointment only. **</p>
                     <div className="flex">
                         <div className="w-[100px] h-[100px] bg-[#ffd21e] rounded-2xl flex justify-center items-center">
                         <Mail className="text-white" size={65}/>

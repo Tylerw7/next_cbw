@@ -68,7 +68,7 @@ const data = [
     category: "Built-In Entertainment Systems",
     title: "Sleek Built-in entertainment systems",
     src: "https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20230906_105706.jpg",
-    content: '/built-in-systems',
+    content: '/entertainment-systems',
   },
   {
     category: "YorkTowne Dealer",

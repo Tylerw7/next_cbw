@@ -15,8 +15,8 @@ export const quoteSubmitionForm = async (prev: unknown, formData: FormData) => {
     });
 
     await resend.emails.send({
-      from: 'Your Company <info@preciouswettachart.com>',
-      to: quote.email,
+      from: 'Cabinetry by Wettach <info@preciouswettachart.com>',
+      to: 't4wettach@gmail.com',
       subject: 'New Quote Request',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
@@ -59,7 +59,7 @@ export const hiringApplicationForm = async (prev: unknown, formData: FormData) =
 
     await resend.emails.send({
       from: 'Cabinetry by Wettach <info@preciouswettachart.com>',
-      to: form.email,
+      to: 't4wettach@gmail.com',
       subject: `New Job Application: ${form.first_name} ${form.last_name}`,
       html: `
         <div style="font-family: sans-serif; padding: 20px;">

@@ -51,23 +51,24 @@ const MenuBar = () => {
                             <NavigationMenuLink asChild>
                                 <Link href='/closets'>
                                 <h2 className="font font-semibold">Closet Systems</h2>
-                                <p className="text-muted-foreground">This is where the content will go.</p>
+                                <p className="text-muted-foreground">Solutions to maximize space and organized.</p>
                                 </Link>
                             </NavigationMenuLink>
                         </li>
                         <li>
                             <NavigationMenuLink asChild>
                                 <Link href='/'>
-                                <h2 className="font font-semibold">Heading</h2>
-                                <p className="text-muted-foreground">This is where the content will go.</p>
+                                <h2 className="font font-semibold">Entertainment Systems</h2>
+                                <p className="text-muted-foreground">Built-ins for TVs, media gear, and display areas.
+                                </p>
                                 </Link>
                             </NavigationMenuLink>
                         </li>
                         <li>
                             <NavigationMenuLink asChild>
                                 <Link href='/'>
-                                <h2 className="font font-semibold">Heading</h2>
-                                <p className="text-muted-foreground">This is where the content will go.</p>
+                                <h2 className="font font-semibold">Out Door Cabinets</h2>
+                                <p className="text-muted-foreground">Weather-resistant cabinetry for outdoors.</p>
                                 </Link>
                             </NavigationMenuLink>
                         </li>

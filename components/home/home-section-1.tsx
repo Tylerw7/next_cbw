@@ -1,5 +1,6 @@
 import { Plus } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HomeSection1 = () => {
     return ( 
@@ -29,7 +30,7 @@ const HomeSection1 = () => {
             <div className=" h-[300px] w-full flex justify-center items-center p-4">
                 <div>
                     <p className="mb-4 text-muted-foreground">Every piece is tailored to fit your unique needs, combining expert craftsmanship with premium materials for a perfect balance of beauty and durability. Whether you&apos;re looking for a sleek modern design or timeless traditional cabinetry, we work closely with you to create storage solutions that maximize space and reflect your personal style.</p>
-                    <Button>Find Out More</Button>
+                    <Button><Link href='contact-us'>Find Out More</Link></Button>
                 </div>
             </div>
             

@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import MenuBar from "./menu";
 import { Button } from "../ui/button";
@@ -34,13 +33,15 @@ const NavBar = () => {
             <div className="flex justify-between md:justify-around pr-6 items-center">
                 <div>
                     <Link href="/">
-                    <Image 
+                   {/*} <Image 
                         src="/images/logo.jpg"
                         height={45}
                         width={45}
                         alt="logo"
                         className="object-cover"
                     />
+                    */}
+                    <h2 className="font-bold text-[1.5rem]">Cabintry By Wettach</h2>
                     </Link>
                 </div>
                 {isMobile ? (

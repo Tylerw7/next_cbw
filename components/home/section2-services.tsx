@@ -18,7 +18,7 @@ export function AppleCardsCarouselDemo() {
   );
 }
 
-const DummyContent = () => {
+{/* const DummyContent = () => {
   return (
     <>
       {[...new Array(3).fill(1)].map((_, index) => {
@@ -43,23 +43,24 @@ const DummyContent = () => {
     </>
   );
 };
+*/}
 
 const data = [
   {
     category: "Custom Cabinets",
-    title: "You can do more with AI.",
+    title: "Design your dream kitchen",
     src: "https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20200605_142432.jpg",
     content: '/kitchen',
   },
   {
     category: "Closet Systems",
-    title: "Enhance your productivity.",
+    title: "Enhance your storage",
     src: "https://cloudphotosone.s3.us-east-1.amazonaws.com/closet.jpg",
     content: '/closets',
   },
   {
     category: "Out Door Cabinets",
-    title: "Launching the new Apple Vision Pro.",
+    title: "Weather resistant cabinets",
     src: "/images/outdoor.jpg",
     content: "out-door-cabinets",
   },
@@ -72,14 +73,14 @@ const data = [
   },
   {
     category: "YorkTowne Dealer",
-    title: "Photography just got better.",
-    src: "/images/outdoor.jpg",
+    title: "COMING SOON!",
+    src: "https://cloudphotosone.s3.us-east-1.amazonaws.com/finishes3.jpg",
     content: "york",
   },
   {
     category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "/images/outdoor.jpg",
+    title: "Hiring for a Staff ",
+    src: "https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20180919_105533.jpg",
     content: "/work-with-us",
   },
 ];

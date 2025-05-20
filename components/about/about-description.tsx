@@ -1,4 +1,4 @@
-import { CircleCheck } from "lucide-react";
+
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const AboutDescription = () => {
                         <div className="bg-[#ffd21e] rounded-md p-1 font-bold w-fit text-[0.8rem]">About</div>
                         <h2 className="font-bold text-[3rem]">Craftsmanship. Precision. Integrity.</h2>
                         <p className=" text-[1rem] p-2">At Cabinetry by Wettach, we believe that your home should reflect your lifestyle—beautifully and functionally. Based in Sarasota, Florida, we specialize in designing and building high-quality custom cabinetry for kitchens, bathrooms, closets, home offices, and more.</p>
-                        <p className=" text-[1rem] p-2">As a local, family-owned business, we take pride in offering personalized service and expert craftsmanship. Whether you're renovating your dream kitchen or upgrading a single room, we work closely with you from concept to completion to bring your vision to life.</p>
+                        <p className=" text-[1rem] p-2">As a local, family-owned business, we take pride in offering personalized service and expert craftsmanship. Whether you&apos;re renovating your dream kitchen or upgrading a single room, we work closely with you from concept to completion to bring your vision to life.</p>
                         <p className=" text-[1rem] p-2">Our attention to detail, commitment to quality, and passion for woodworking set us apart. Each project is handcrafted with precision using premium materials, ensuring both durability and timeless beauty. We serve homeowners, builders, and designers throughout Sarasota and the surrounding areas. No matter the size or complexity of the project, we approach each job with the same level of care and dedication.</p>
 
                         

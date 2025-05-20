@@ -12,7 +12,7 @@ const OutDoorDescription = () => {
                     <div className="h-full w-full md:w-[50%] flex flex-col p-5">
                         <div className="bg-[#ffd21e] rounded-md p-1 font-bold w-fit text-[0.8rem]">Out Door Cabinets & Kitchens</div>
                         <h2 className="font-bold text-[2.5rem]">Built for the Way You Live Outdoors</h2>
-                        <p className="mb-[25px]">Your outdoor space should be just as functional and inviting as your indoor kitchen. Our custom outdoor cabinets and kitchens are designed to enhance how you cook, entertain, and relax outside. From durable materials to weather-resistant finishes, every element is built to match your lifestyle and stand up to the elements. Whether you're creating a full outdoor kitchen or adding smart storage to your patio, we&apos;ll design a system that fits your space and the way you live.</p>
+                        <p className="mb-[25px]">Your outdoor space should be just as functional and inviting as your indoor kitchen. Our custom outdoor cabinets and kitchens are designed to enhance how you cook, entertain, and relax outside. From durable materials to weather-resistant finishes, every element is built to match your lifestyle and stand up to the elements. Whether you&apos;re creating a full outdoor kitchen or adding smart storage to your patio, we&apos;ll design a system that fits your space and the way you live.</p>
                         <p className="font-bold text-[1.2rem]">Popular Outdoor Features We Offer:</p>
                         <ul className=" p-2 mb-[25px]">
                             <li className="flex gap-3 p-2 "><CircleCheck className="text-green-400"/>Fully customized outdoor kitchen layouts</li>

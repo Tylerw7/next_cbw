@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Card} from "../ui/card"
+import Link from "next/link";
 
 
 type CardProps ={
@@ -55,7 +56,7 @@ const GallerySection = () => {
                 <div className="bg-black h-[2px] w-[170px]"></div>
                 </div>
                 <p className="text-muted-foreground mb-[25px] w-[80%]">Our work showcases a curated selection of our custom cabinetry projects—ranging from elegant kitchens and refined bathrooms to functional closets and built-in storage solutions.</p>
-                <Button className="w-[250px] tracking-wider bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black">Find out more</Button>
+                <Button className="w-[250px] tracking-wider bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black"><Link href='contact-us'>Find out more</Link></Button>
             </div>
             <div className="w-[100vw] md:w-[50%] flex flex-col ">
                 <GalleryCard 

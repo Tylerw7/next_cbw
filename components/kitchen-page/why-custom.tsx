@@ -48,7 +48,7 @@ const WhyCustom = () => {
             <div className="h-full w-full md:w-[50%] flex flex-col p-5">
                 <div className="bg-[#ffd21e] rounded-md p-1 font-bold w-fit text-[0.8rem]">Custom Kitchens</div>
                 <h2 className="font-bold text-[2.5rem]">Why choose custom?</h2>
-                <p className="mb-[25px]">Custom cabinets offer a level of personalization, quality, and functionality that off-the-shelf options simply can't match. At Cabinetry by Wettach, we design cabinetry around your unique space, lifestyle, and vision—ensuring every drawer, shelf, and finish serves a purpose and reflects your taste. Our skilled craftsmen use high-grade materials and meticulous techniques to build cabinetry that not only fits perfectly but stands the test of time. Whether you're looking for smarter storage, refined style, or a kitchen that feels truly yours, custom cabinetry is the difference you can see and feel.</p>
+                <p className="mb-[25px]">Custom cabinets offer a level of personalization, quality, and functionality that off-the-shelf options simply can&apos;t match. At Cabinetry by Wettach, we design cabinetry around your unique space, lifestyle, and vision—ensuring every drawer, shelf, and finish serves a purpose and reflects your taste. Our skilled craftsmen use high-grade materials and meticulous techniques to build cabinetry that not only fits perfectly but stands the test of time. Whether you&apos;re looking for smarter storage, refined style, or a kitchen that feels truly yours, custom cabinetry is the difference you can see and feel.</p>
                 
                 <Link href='/contact-us'>
                 <Button className="w-[200px] hover:cursor-pointer mb-[25px] mt-[150px]">Find out more</Button>

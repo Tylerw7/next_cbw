@@ -13,7 +13,7 @@ const ClosetDescription = () => {
                     <div className="h-full w-full md:w-[50%] flex flex-col p-5">
                         <div className="bg-[#ffd21e] rounded-md p-1 font-bold w-fit text-[0.8rem]">Closet Systems</div>
                         <h2 className="font-bold text-[2.5rem]">Built Around Your Lifestyle</h2>
-                        <p className="mb-[25px]">Your closet is more than just storage—it's where organization meets peace of mind. Our custom closet systems blend sleek design, smart layout, and practical function to fit your daily routine. Whether you're optimizing a walk-in space or revamping a reach-in closet, we&apos;ll design a system tailored to your style and storage needs.</p>
+                        <p className="mb-[25px]">Your closet is more than just storage—it&apos;s where organization meets peace of mind. Our custom closet systems blend sleek design, smart layout, and practical function to fit your daily routine. Whether you&apos;re optimizing a walk-in space or revamping a reach-in closet, we&apos;ll design a system tailored to your style and storage needs.</p>
                         <p className="font-bold text-[1.2rem]">Popular Closet Features We Offer:</p>
                         <ul className=" p-2 mb-[25px]">
                             <li className="flex gap-3 p-2 "><CircleCheck className="text-green-400"/>Walk-in and reach-in closet systems</li>

@@ -50,14 +50,14 @@ const NavBar = () => {
                         <SheetContent>
                             <SheetHeader>
                                 <SheetTitle>Main menu</SheetTitle>
-                                <SheetDescription className="flex flex-col">
-                                    <a href="/" className="text-black hover:text-grey-500 text-[1.1rem]">Home</a>
-                                    <a href="/kitchen" className="text-black hover:text-grey-500 text-[1.1rem]">Kitchens</a>
-                                    <a href="/closets" className="text-black hover:text-grey-500 text-[1.1rem]">Closets</a>
-                                    <a href="/out-door-cabinets" className="text-black hover:text-grey-500 text-[1.1rem]">Out Door Cabinets</a>
-                                    <a href="/entertainment-systems" className="text-black hover:text-grey-500 text-[1.1rem]">Entertainment Systems</a>
-                                    <a href="/about" className="text-black hover:text-grey-500 text-[1.1rem]">About</a>
-                                    <a href="/contact-us" className="text-black hover:text-grey-500 text-[1.1rem]">Contact</a>
+                                <SheetDescription className="flex flex-col gap-2">
+                                    <Link href="/" className="text-black hover:text-grey-500 text-[1.1rem]">Home</Link>
+                                    <Link href="/kitchen" className="text-black hover:text-grey-500 text-[1.1rem]">Kitchens</Link>
+                                    <Link href="/closets" className="text-black hover:text-grey-500 text-[1.1rem]">Closets</Link>
+                                    <Link href="/out-door-cabinets" className="text-black hover:text-grey-500 text-[1.1rem]">Out Door Cabinets</Link>
+                                    <Link href="/entertainment-systems" className="text-black hover:text-grey-500 text-[1.1rem]">Entertainment Systems</Link>
+                                    <Link href="/about" className="text-black hover:text-grey-500 text-[1.1rem]">About</Link>
+                                    <Link href="/contact-us" className="text-black hover:text-grey-500 text-[1.1rem]">Contact</Link>
                                 </SheetDescription>
                             </SheetHeader>
                         </SheetContent>

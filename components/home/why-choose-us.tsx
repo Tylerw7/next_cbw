@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
 
     const CardComponent = ({title, description, content}: {title: string, description: string, content: string}) => {
         return (
-            <Card className="min-w-[400px] max-w-[450px] h-[350px] text-center bg-[#333333] border-none">
+            <Card className="min-w-[300px] sm:min-w-[400px] max-w-[450px] h-[350px] text-center bg-[#333333] border-none">
                 <CardHeader>
                     <CardTitle className="text-[#ffd21e] text-[1.6rem]">{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
     return ( 
         <div className="w-[100vw] bg-[#F5F5F5] flex flex-col justify-center items-center mt-[25px]">
             <h2 className="font-bold text-[3rem] p-4 mt-[50px]">Why Choose Us?</h2>
-            <div className="w-[400px] bg-[#333333] h-[2px] mb-[20px]"></div>
+            <div className="max-w-[400px] min-w-[300px] bg-[#333333] h-[2px] mb-[20px]"></div>
             <p className="text-muted-foreground w-[40%] text-center mb-[50px]">Choose us for custom-crafted cabinets that combine exceptional craftsmanship, premium materials, and personalized service, all backed by our locally-owned commitment to quality.</p>
             <div className="flex flex-wrap w-full h-full gap-4 p-4 justify-center items-center mb-[100px]">
                 <CardComponent 

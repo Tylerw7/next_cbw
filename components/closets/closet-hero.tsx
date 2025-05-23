@@ -9,7 +9,7 @@ const ClosetHero = () => {
 
           {/* Content */}
           <div className="relative z-10 flex flex-col justify-center items-center h-full">
-            <h1 className="text-white font-bold text-[6rem] pb-[10px]">Custom Closet Systems</h1>
+            <h1 className="text-white font-bold text-[6rem] pb-[10px] w-[80%] sm:w-full">Custom Closet Systems</h1>
             
             <Button  className="w-[40%] text-[1.5rem] bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black" >
             <a className='scroll-smooth' href='#contact'>Get a Quote</a>

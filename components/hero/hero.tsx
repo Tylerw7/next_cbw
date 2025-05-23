@@ -14,8 +14,8 @@ const Hero = () => {
 
           {/* Content */}
           <div className="relative z-10 flex flex-col justify-center items-center h-full p-2">
-            <h2 className="text-white font-bold text-[6rem] pb-[10px]">Cabinetry By Wettach</h2>
-            <p className="text-white text-[1.5rem] w-[30rem] mb-[50px]">
+            <h2 className="text-white font-bold text-[6rem] pb-[10px] w-[80%] sm:w-full">Cabinetry By Wettach</h2>
+            <p className="text-white text-[1.5rem] mb-[50px] w-[80%] sm:w-[30rem]">
               Discover custom cabinets crafted to fit your style and needs, combining beauty and functionality.
             </p>
             <Button  className="w-[40%] text-[1.5rem] bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black" >

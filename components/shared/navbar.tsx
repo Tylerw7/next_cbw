@@ -41,7 +41,7 @@ const NavBar = () => {
                         className="object-cover"
                     />
                     */}
-                    <h2 className="font-bold text-[1.5rem]">Cabintry By Wettach</h2>
+                    <h2 className="font-bold text-[1.5rem]">Cabinetry By Wettach</h2>
                     </Link>
                 </div>
                 {isMobile ? (

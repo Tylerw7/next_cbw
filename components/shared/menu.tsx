@@ -67,7 +67,7 @@ const MenuBar = () => {
                         <li>
                             <NavigationMenuLink asChild>
                                 <Link href='/out-door-cabinets'>
-                                <h2 className="font font-semibold">Out Door Cabinets</h2>
+                                <h2 className="font font-semibold">Outdoor Cabinets</h2>
                                 <p className="text-muted-foreground">Weather-resistant cabinetry for outdoors.</p>
                                 </Link>
                             </NavigationMenuLink>

@@ -13,13 +13,13 @@ const Footer = () => {
                 <h2 className="font-bold text-[1.5rem]">Cabintry By Wettach</h2>
             </div>
             <div className=" text-gray-600 dark:text-gray-300 mx-auto">
-                <p className="font-bold">About</p>
+                <p className="font-bold mb-[20px] text-[1.5rem]">About</p>
                 <p className="hover:text-black hover:cursor-pointer "><Link href='about'>Services</Link></p>
                 <p className="hover:text-black hover:cursor-pointer "><Link href='about'>Locations</Link></p>
                 <p className="hover:text-black hover:cursor-pointer "><Link href='about'>About</Link></p>
             </div>
             <div className="mx-auto text-gray-600 ">
-                <p className=" text-gray-600 dark:text-gray-300 font-bold">Services</p>
+                <p className=" text-gray-600 dark:text-gray-300 font-bold mb-[20px] text-[1.5rem]">Services</p>
                 <p className="hover:text-black hover:cursor-pointer "><Link href='kitchen'>Kitchens</Link></p>
                 <p className="hover:text-black hover:cursor-pointer "><Link href='closets'>Closet</Link></p>
                 <p className="hover:text-black hover:cursor-pointer "><Link href='out-door-cabinets'>Out Door Cabinets</Link></p>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <p className="hover:text-black hover:cursor-pointer "><Link href='contact-us'>Contact</Link></p>
             </div>
             <div className="mx-auto">
-                <p className=" text-gray-600 dark:text-gray-300 font-bold">Contact</p>
+                <p className=" text-gray-600 dark:text-gray-300 font-bold mb-[20px] text-[1.5rem]">Contact</p>
                 <h2 className="font-bold">Name:</h2>
                 <p>Cabinetry by Wettach</p>
                 <h2 className="font-bold">Address:</h2>

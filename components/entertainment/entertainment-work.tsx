@@ -51,7 +51,7 @@ const EntertainmentWork = () => {
                 <div className="bg-black h-[2px] w-[170px]"></div>
                 </div>
                 <p className="text-muted-foreground mb-[25px] w-[80%]">Our work features a curated collection of custom cabinetry, including built-in furniture designed to seamlessly blend style, function, and storage into your space.</p>
-                <Button className="w-[250px] tracking-wider bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black"><Link href='/contact-us'>Find out more</Link></Button>
+                <Button className="w-[250px] text-[1rem] font-semibold tracking-wider bg-[#ffd21e] hover:bg-[#ffe477] hover:cursor-pointer text-black"><Link href='/contact-us'>Find out more</Link></Button>
             </div>
             <div className="w-[100vw] md:w-[50%] flex flex-col ">
                 <GalleryCard 

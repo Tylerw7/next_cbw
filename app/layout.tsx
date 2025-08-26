@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 
 
@@ -60,18 +61,23 @@ const globalSchema = {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }}
         />
         {/* Google tag (gtag.js) */}
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-PD57RVHHRQ"
-        ></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-PD57RVHHRQ');
-          `,
-        }} />
+          strategy="afterInteractive"
+        />
+        <Script
+          id="ga-setup"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-PD57RVHHRQ');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}

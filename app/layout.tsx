@@ -44,7 +44,7 @@ const globalSchema = {
     "name": "Cabinetry By Wettach",
     //"logo": {
     //"@type": "ImageObject",
-    //"url": "https://www.mywebsite.com/kitchen2.png"
+    //"url": "/cbw_logo_blue.png"
     //}
   }
 }
@@ -56,6 +56,10 @@ const globalSchema = {
     <html lang="en">
       <head>
         {/* Schema */}
+
+        <link rel="icon" href="/cbw_logo_blue.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/cbw_logo_blue.png" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }}

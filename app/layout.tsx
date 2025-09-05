@@ -42,10 +42,10 @@ const globalSchema = {
     "publisher": {
     "@type": "Organization",
     "name": "Cabinetry By Wettach",
-    //"logo": {
-    //"@type": "ImageObject",
-    //"url": "/cbw_logo_blue.png"
-    //}
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.cabinetrybywettach.com/cbw_logo_blue.png"
+    }
   }
 }
 

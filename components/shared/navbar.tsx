@@ -41,7 +41,7 @@ const NavBar = () => {
                         className="object-cover"
                     />
                     */}
-                    <h2 className="font-bold text-[1.5rem]">Cabinetry By Wettach</h2>
+                    <h2 className="font-bold text-[1.5rem] pl-[15px]">Cabinetry By Wettach</h2>
                     </Link>
                 </div>
                 {isMobile ? (
@@ -67,7 +67,7 @@ const NavBar = () => {
                     <MenuBar />
                     <div>
                         <Link href='contact-us'>
-                        <Button>Contact</Button>
+                        <Button >Contact</Button>
                         </Link>
                     </div>
                     </>

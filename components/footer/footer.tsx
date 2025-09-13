@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="w-full flex flex-col sm:flex-row gap-4 sm:gap-8 p-4 text-center">
             <div className="m-auto flex gap-4 justify-center items-center">
                 {/* <Image src="/images/logo.jpg" width={50} height={50} alt="logo" /> */}
-                <h2 className="font-bold text-[1.5rem]">Cabintry By Wettach</h2>
+                <h2 className="font-bold text-[1.5rem]">Cabinetry By Wettach</h2>
             </div>
             <div className=" text-gray-600 dark:text-gray-300 mx-auto">
                 <p className="font-bold mb-[20px] text-[1.5rem]">About</p>

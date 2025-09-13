@@ -33,7 +33,7 @@ const Footer = () => {
                 <p>Cabinetry by Wettach</p>
                 <h2 className="font-bold">Address:</h2>
                 <p>1746 10th Way Unit B</p>
-                <p>Sarasota, FL 34243</p>
+                <p>Sarasota, FL 34236</p>
                 <h2 className="font-bold">Phone:</h2>
                 <p>941-232-2817</p>
             </div>

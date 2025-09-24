@@ -2,6 +2,7 @@
 
 
 import Link from "next/link";
+import Image from "next/image";
 const currentYear = new Date().getFullYear()
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
         <footer className="w-[100vw] flex flex-col bg-gray-100 dark:bg-gray-800 ">
             <div className="w-full flex flex-col sm:flex-row gap-4 sm:gap-8 p-4 text-center">
             <div className="m-auto flex gap-4 justify-center items-center">
-                {/* <Image src="/images/logo.jpg" width={50} height={50} alt="logo" /> */}
+                <Image src="/images/cbw_logo_blue.png" width={100} height={100} alt="logo" />
                 <h2 className="font-bold text-[1.5rem]">Cabinetry By Wettach</h2>
             </div>
             <div className=" text-gray-600 dark:text-gray-300 mx-auto">
@@ -38,7 +39,7 @@ const Footer = () => {
                 <p>941-232-2817</p>
             </div>
         </div>
-        <div className="flex items-center justify-center mt-[25px] mb-[25px] p-4">
+        <div className="flex items-center justify-center  pt-[40px] pb-[40px] bg-yellow-300">
             <p className="text-sm text-gray-600 dark:text-gray-300">{`© ${currentYear} Cabintry By Wettach`}</p>
         </div>
         </footer>

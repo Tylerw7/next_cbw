@@ -13,6 +13,7 @@ import {
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
+  import Image from "next/image";
   
 
 
@@ -32,16 +33,16 @@ const NavBar = () => {
         <header className="w-full border-b border-b-gray-200 py-4">
             <div className="flex justify-between md:justify-around pr-6 items-center">
                 <div>
-                    <Link href="/">
-                   {/*} <Image 
-                        src="/images/logo.jpg"
-                        height={45}
-                        width={45}
+                    <Link href="/" className="flex items-center">
+                    <Image 
+                        src="/images/cbw_logo_blue.png"
+                        height={75}
+                        width={75}
                         alt="logo"
                         className="object-cover"
                     />
-                    */}
-                    <h2 className="font-bold text-[1.5rem] pl-[15px]">Cabinetry By Wettach</h2>
+                
+                    <h2 className="font-bold text-[1.8rem] pl-[15px]">Cabinetry By Wettach</h2>
                     </Link>
                 </div>
                 {isMobile ? (
@@ -67,7 +68,7 @@ const NavBar = () => {
                     <MenuBar />
                     <div>
                         <Link href='contact-us'>
-                        <Button >Contact</Button>
+                        <Button className="w-[300px]">Contact</Button>
                         </Link>
                     </div>
                     </>

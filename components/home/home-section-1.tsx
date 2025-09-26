@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HomeSection1 = () => {
     return ( 
-        <div className="flex flex-col md:flex-row p-10">
+        <div className="flex flex-col md:flex-row p-10 mt-[50px] mb-[25px]">
             {/*Box1*/}
             <div className=" h-[300px] w-full flex justify-center items-center">
                 <div className="bg-gray-700 h-[170px] w-[250px] z-[2] flex justify-center items-center">
@@ -29,7 +29,7 @@ const HomeSection1 = () => {
             {/*Box3*/}
             <div className=" h-[300px] w-full flex justify-center items-center p-4">
                 <div>
-                    <p className="mb-4 text-muted-foreground">Every piece is tailored to fit your unique needs, combining expert craftsmanship with premium materials for a perfect balance of beauty and durability. Whether you&apos;re looking for a sleek modern design or timeless traditional cabinetry, we work closely with you to create storage solutions that maximize space and reflect your personal style.</p>
+                    <p className="mb-4 text-muted-foreground text-[20px]">Every piece is tailored to fit your unique needs, combining expert craftsmanship with premium materials for a perfect balance of beauty and durability. Whether you&apos;re looking for a sleek modern design or timeless traditional cabinetry, we work closely with you to create storage solutions that maximize space and reflect your personal style.</p>
                     <Button><Link href='contact-us'>Find Out More</Link></Button>
                 </div>
             </div>

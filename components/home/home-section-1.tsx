@@ -30,7 +30,7 @@ const HomeSection1 = () => {
             <div className=" h-[300px] w-full flex justify-center items-center p-4">
                 <div>
                     <p className="mb-4 text-muted-foreground text-[20px]">Every piece is tailored to fit your unique needs, combining expert craftsmanship with premium materials for a perfect balance of beauty and durability. Whether you&apos;re looking for a sleek modern design or timeless traditional cabinetry, we work closely with you to create storage solutions that maximize space and reflect your personal style.</p>
-                    <Button><Link href='contact-us'>Find Out More</Link></Button>
+                    <Button className="font-bold w-[150px] h-[50px] text-[1rem]"><Link href='contact-us'>Find Out More</Link></Button>
                 </div>
             </div>
             

@@ -17,7 +17,7 @@ import Image from "next/image"
 
 const MenuBar = () => {
     return ( 
-        <NavigationMenu className="text-[1.1rem] font-semibold">
+        <NavigationMenu className="text-[1.3rem] font-semibold">
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <Link href='/'>
@@ -25,9 +25,9 @@ const MenuBar = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[1.1rem]">Kitchens</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[1.3rem] font-semibold">Kitchens</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                    <ul className="w-[400px] gap-3 grid grid-cols-[.75fr_1fr]">
+                    <ul className="w-[500px] gap-3 grid grid-cols-[.75fr_1fr]">
                         <li className="row-span-3 bg-gray-200 rounded-md m-auto">
                             <NavigationMenuLink asChild>
                             <Link href='/kitchen'>

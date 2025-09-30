@@ -1,5 +1,8 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+
+import { Merriweather } from "next/font/google";
+
+
+const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
 
 
 const SarasotaHero = () => {
@@ -14,7 +17,7 @@ const SarasotaHero = () => {
       
         {/* Content */}
         <div className="w-[50vw] flex flex-col ">
-            <h1 className="text-[4rem] p-4 font-bold">Solving your cabinet and furniture needs in Sarasota, FL</h1>
+            <h1 className={merriweather.className + "text-[4rem] p-4 font-bold "}>Solving your cabinet and furniture needs in Sarasota, FL</h1>
         </div>
     </div>
      );

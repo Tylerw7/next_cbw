@@ -9,7 +9,7 @@ const raleway = Raleway({ subsets: ["latin"], weight: ["400", "700"] });
 
 
 const SarasotaHero = () => {
-    const [isMedium, setIsMedium] = useState<Boolean | null>(false);
+    const [isMedium, setIsMedium] = useState<boolean | null>(false);
 
     useEffect(() => {
         const handleResize = () => {

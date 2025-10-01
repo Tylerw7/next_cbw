@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
 
+
 // Raleway Font variable
 const raleway = Raleway({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -27,6 +28,9 @@ const SarasotaHero = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     },[])
+
+
+    
     
 
 

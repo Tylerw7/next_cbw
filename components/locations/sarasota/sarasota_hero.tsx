@@ -1,3 +1,6 @@
+"use client"
+
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
 
@@ -6,15 +9,28 @@ const raleway = Raleway({ subsets: ["latin"], weight: ["400", "700"] });
 
 
 const SarasotaHero = () => {
+    const [isMedium, setIsMedium] = useState<Boolean | null>(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMedium(window.innerWidth >= 880);
+        };
+
+        // Run once on mount
+        handleResize();
+
+        // Update when screen size changes
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    },[])
     
 
 
 
     return ( 
         <>
+    { isMedium ? (
     <div className="relative overflow-hidden p-[10px] w-full h-[85vh] bg-cover bg-center flex flex-col justify-center items-start text-center" style={{ backgroundImage: 'url("/images/Sarasota-hero.jpg")' }}>
-        {/* Overlay to dim the background */}
-        {/*<div className="absolute inset-0 bg-black/40"></div>*/}
       
         {/* Content */}
         <div className="w-[50vw] flex flex-col ">
@@ -38,6 +54,10 @@ const SarasotaHero = () => {
             hover:cursor-pointer
             ">Get A Quote</Button>
     </div>
+     ) : (
+        <div>small screen</div>
+     )
+    }
     </>
      );
 }

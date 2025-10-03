@@ -1,14 +1,15 @@
 import SarasotaHero from '@/components/locations/sarasota/sarasota_hero'
 import React from 'react'
+import Script from 'next/script';
 
 const sarasota = () => {
 
     // Location Page Schema
-    const SarasotaSchema = {
+    const sarasotaSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         name: "Cabinetry By Wettach",
-        image: "/image/cbw_logo_blue",
+        image: "/image/cbw_logo_blue.png",
         url: "https://www.cabinetrybywettach.com/",
         telephone: "+1-941-232-2817",
         address: {
@@ -51,6 +52,13 @@ const sarasota = () => {
   return (
     <>
     <SarasotaHero />
+
+    <Script 
+       id="springfield-schema"
+       type="application/ld+json"
+       strategy="afterInteractive"
+       dangerouslySetInnerHTML={{ __html: JSON.stringify(sarasotaSchema) }}
+        />
     </>
   )
 }

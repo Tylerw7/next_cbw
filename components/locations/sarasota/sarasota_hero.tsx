@@ -43,7 +43,7 @@ const SarasotaHero = () => {
       
         {/* Content */}
         <div className="w-[45vw] flex flex-col ">
-            <h1 className={raleway.className + " text-[3.5rem] pl-[50px] font-bold text-start"}>Solving Your Cabinet And Furniture Needs In Sarasota, FL</h1>
+            <h1 className={raleway.className + " text-[3.5rem] pl-[50px] font-bold text-start"}>Custom Kitchen & Bathroom Cabinets in Sarasota, FL</h1>
         </div>
         <div className="w-[175px] h-[7px] bg-[#5a8495] ml-[50px] mt-[25px]"></div>
         <p className={raleway.className + " ml-[50px] mt-[25px] text-[1.5rem] text-start w-[45vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
@@ -66,7 +66,7 @@ const SarasotaHero = () => {
      ) : (
         <>
             <div className=" flex flex-col justify-center items">
-                <h1 className={raleway.className + " text-[3.5rem] m-auto font-bold text-start w-[85vw]"}>Solving Your Cabinet And Furniture Needs In Sarasota, FL</h1>
+                <h1 className={raleway.className + " text-[3.5rem] m-auto font-bold text-start w-[85vw]"}>Custom Kitchen & Bathroom Cabinets in Sarasota, FL</h1>
                 <p className={raleway.className + " m-auto mt-[20px] text-[1.5rem] text-start w-[85vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
                 <Button className="
                     ml-[50px] 

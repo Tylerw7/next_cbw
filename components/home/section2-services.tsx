@@ -27,8 +27,8 @@ export function AppleCardsCarouselDemo() {
 
   const ServiceCard = ({image , title, item1, item2, item3, link}: ServiceCardProps) => {
     return (
-      <div className="w-[450px] h-[725px] rounded-3xl shadow-2xl border-1 border-gray-200 mb-[50px]">
-        <div className="relative w-[450px] h-[300px] rounded-t-3xl border-r-1 border-l-1 overflow-hidden">
+      <div className="w-[400px] sm:w-[450px] h-[725px] rounded-3xl shadow-2xl border-1 border-gray-200 mb-[50px]">
+        <div className="relative w-[400px] sm:w-[450px] h-[300px] rounded-t-3xl border-r-1 border-l-1 overflow-hidden">
           <Image
             src={image}
             alt="Cabinet"
@@ -82,7 +82,7 @@ export function AppleCardsCarouselDemo() {
     <div className="p-4 flex flex-col items-center">
       <h2 className="text-[4rem] sm:text-[6rem] font-semibold text-center">Our Services</h2>
       <div className="w-[400px] sm:w-[600px] h-[7px] bg-[#5a8495] mb-[50px] ml-[10px] "></div>
-        <div className="flex flex-wrap gap-4 justify-evenly">
+        <div className="flex flex-wrap gap-4 justify-evenly p-4">
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20200605_142432.jpg"
             title="Custom Kitchens"

@@ -39,8 +39,8 @@ const Footer = () => {
                 <p>941-232-2817</p>
             </div>
         </div>
-        <div className="flex items-center justify-center  pt-[40px] pb-[40px] bg-yellow-300">
-            <p className="text-sm text-gray-600 dark:text-gray-300">{`© ${currentYear} Cabintry By Wettach`}</p>
+        <div className="flex items-center justify-center  pt-[40px] pb-[40px] bg-[#5a8495]">
+            <p className="text-sm text-white">{`© ${currentYear} Cabintry By Wettach`}</p>
         </div>
         </footer>
      );

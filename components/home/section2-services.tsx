@@ -107,7 +107,7 @@ export function AppleCardsCarouselDemo() {
             item1="Weather-resistant materials"
             item2="Stylish outdoor storage"
             item3="Perfect for kitchens & patios"
-            link="/outdoor"
+            link="/out-door-cabinets"
           />
 
           <ServiceCard 
@@ -116,7 +116,7 @@ export function AppleCardsCarouselDemo() {
             item1="Seamless integration with rooms"
             item2="Space-saving solutions"
             item3="Custom-fit to your home"
-            link="/builtins"
+            link="/entertainment-systems"
           />
 
           <ServiceCard 
@@ -125,7 +125,7 @@ export function AppleCardsCarouselDemo() {
             item1="Wide selection of styles"
             item2="Trusted Yorktowne quality"
             item3="Expert guidance on finishes"
-            link="/yorktowne"
+            link="/kitchen"
           />
 
           <ServiceCard 
@@ -134,7 +134,7 @@ export function AppleCardsCarouselDemo() {
             item1="Join a skilled team"
             item2="Hands-on craftsmanship"
             item3="Opportunities for growth"
-            link="/careers"
+            link="/work-with-us"
           />
   
         </div>  

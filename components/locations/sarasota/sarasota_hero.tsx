@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
+import Image from "next/image";
 
 
 // Raleway Font variable
@@ -63,7 +64,39 @@ const SarasotaHero = () => {
             ">Get A Quote</Button>
     </div>
      ) : (
-        <div>small screen</div>
+        <>
+            <div className=" flex flex-col justify-center items">
+                <h1 className={raleway.className + " text-[3.5rem] m-auto font-bold text-start w-[85vw]"}>Solving Your Cabinet And Furniture Needs In Sarasota, FL</h1>
+                <p className={raleway.className + " m-auto mt-[20px] text-[1.5rem] text-start w-[85vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
+                <Button className="
+                    ml-[50px] 
+                    mt-[50px] 
+                    mb-[50px]
+                    w-[225px] 
+                    h-[60px] 
+                    text-[1.6rem] 
+                    rounded-3xl 
+                    font-bold 
+                bg-[#5a8495]
+                hover:bg-white 
+                hover:text-[#5a8495]
+                hover:border-[#5a8495]
+                    hover:border-2
+                    hover:cursor-pointer
+                    ">Get A Quote</Button>
+                    </div>
+
+                    <div className="m-auto flex justify-center items-center mb-[100px] mt-[50px]">
+                        <div className="w-[75vw] h-[50vh] relative ">
+                            <Image 
+                                src="/images/Sarasota-image.jpg"
+                                alt="Sarasota, FL"
+                                fill
+                                className="object-cover rounded-3xl"
+                                />
+                        </div>
+                    </div>
+                </>
      )
     }
     </>

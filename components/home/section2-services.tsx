@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import { Dot } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import {motion} from "motion/react"
 
 
 
@@ -27,6 +30,12 @@ export function AppleCardsCarouselDemo() {
 
   const ServiceCard = ({image , title, item1, item2, item3, link}: ServiceCardProps) => {
     return (
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
       <div className="w-[400px] sm:w-[450px] h-[725px] rounded-3xl shadow-2xl border-1 border-gray-200 mb-[50px]">
         <div className="relative w-[400px] sm:w-[450px] h-[300px] rounded-t-3xl border-r-1 border-l-1 overflow-hidden">
           <Image
@@ -74,6 +83,7 @@ export function AppleCardsCarouselDemo() {
           </Link>
         
       </div>
+      </motion.div>
     )
   }
  

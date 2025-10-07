@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
+import { motion } from "motion/react";
+
 
 
 // Raleway Font variable
@@ -43,10 +45,22 @@ const SarasotaHero = () => {
       
         {/* Content */}
         <div className="w-[45vw] flex flex-col ">
+           <motion.div
+            initial={{ opacity: 0, y: 50}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.8, ease: "easeOut"}}
+           >
             <h1 className={raleway.className + " text-[3.5rem] pl-[50px] font-bold text-start"}>Custom Kitchen & Bathroom Cabinets in Sarasota, FL</h1>
+            </motion.div> 
         </div>
         <div className="w-[175px] h-[7px] bg-[#5a8495] ml-[50px] mt-[25px]"></div>
-        <p className={raleway.className + " ml-[50px] mt-[25px] text-[1.5rem] text-start w-[45vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
+          <motion.div
+            initial={{ opacity: 0, y: 50}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.8, ease: "easeOut"}}
+           >
+            <p className={raleway.className + " ml-[50px] mt-[25px] text-[1.5rem] text-start w-[45vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
+           </motion.div>
         <Button className="
             ml-[50px] 
             mt-[50px] 

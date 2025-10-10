@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { motion } from "motion/react";
 
 
 const Hero = () => {
@@ -13,6 +16,11 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/40"></div>
       
         {/* Content */}
+        <motion.div
+            initial={{ opacity: 0, y: 50}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.8, ease: "easeOut"}}
+           >
         <div className="relative z-10 flex flex-col justify-center items-center h-full p-2">
           <h2 className="text-white font-bold text-[3rem] sm:text-[6rem] pb-[10px] w-[80%] sm:w-full">
             Cabinetry By Wettach
@@ -24,6 +32,7 @@ const Hero = () => {
             <Link href="/contact-us">Get a Quote</Link>
           </Button>
         </div>
+        </motion.div>
     </div>
      );
 }

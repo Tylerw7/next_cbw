@@ -1,3 +1,6 @@
+"use client";
+
+
 import SarasotaHero from '@/components/locations/sarasota/sarasota_hero'
 import React from 'react'
 import Script from 'next/script';
@@ -49,9 +52,13 @@ const sarasota = () => {
 
 
 
+      
+
+
   return (
     <>
     <SarasotaHero />
+    
 
     <Script 
        id="springfield-schema"

@@ -4,6 +4,8 @@
 import SarasotaHero from '@/components/locations/sarasota/sarasota_hero'
 import React from 'react'
 import Script from 'next/script';
+import CallToAction from '@/components/locations/sarasota/call-to-action';
+
 
 const sarasota = () => {
 
@@ -58,6 +60,7 @@ const sarasota = () => {
   return (
     <>
     <SarasotaHero />
+    <CallToAction />
     
 
     <Script 

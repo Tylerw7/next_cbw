@@ -49,7 +49,7 @@ export function AppleCardsCarouselDemo() {
           </div>
 
           <div className='w-[400px] h-[220px] bg-[#f6f6f6] text-center flex justify-center items-center'>
-            <p>{description}</p>
+            <p className="w-[85%] text-[1.1rem]">{description}</p>
           </div>
 
           <Link href={link}>
@@ -79,35 +79,35 @@ export function AppleCardsCarouselDemo() {
           <ServiceCard 
             image="https://cloudphotosone.s3.us-east-1.amazonaws.com/closet.jpg"
             title="Closet Systems"
-            description="Maximize storage space"
+            description="Design your dream closet with Cabinetry by Wettach, custom built to fit your space, style, and lifestyle."
             link="/closets"
           />
 
           <ServiceCard 
             image="/images/outdoor.jpg"
             title="Outdoor Cabinets"
-            description="Weather-resistant materials"
+            description="Design your perfect outdoor kitchen with Cabinetry by Wettach crafted for style, durability, and entertaining."
             link="/out-door-cabinets"
           />
 
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20230906_105706.jpg"
             title="Built-In Systems"
-            description="Seamless integration with rooms"
+            description="Design your dream entertainment system with Cabinetry by Wettach where style meets precision."
             link="/entertainment-systems"
           />
 
           <ServiceCard 
             image="https://cloudphotosone.s3.us-east-1.amazonaws.com/finishes3.jpg"
             title="Yorktowne Dealer"
-            description="Wide selection of styles"
+            description="Wide selection of styles from Yorktowne."
             link="/kitchen"
           />
 
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20180919_105533.jpg"
             title="Work For Us"
-            description="Join a skilled team"
+            description="Join our team of custom cabinet builders."
             link="/work-with-us"
           />
   

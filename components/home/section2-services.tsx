@@ -33,9 +33,9 @@ export function AppleCardsCarouselDemo() {
         transition={{ duration: 0.9, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-      <div className='relative w-[400px] h-[500px] flex flex-col ml-[50px] mb-[50px]'>
+      <div className='relative w-[350px] h-[500px] flex flex-col mb-[50px]'>
 
-          <div className='relative w-[400px] h-[280px] overflow-hidden group'>
+          <div className='relative w-[350px] h-[280px] overflow-hidden group'>
               <Image
                 src={image}
                 alt="Cabinet"
@@ -44,11 +44,11 @@ export function AppleCardsCarouselDemo() {
               />
           </div>
 
-          <div className='absolute left-1/2 top-[280px] -translate-x-1/2 -translate-y-1/2 bg-[#fef9f5] w-[340px] h-[70px] text-center font-bold text-[1.5rem] flex items-center justify-center shadow-2xl'>
+          <div className='absolute left-1/2 top-[280px] -translate-x-1/2 -translate-y-1/2 bg-[#fef9f5] w-[300px] h-[70px] text-center font-bold text-[1.5rem] flex items-center justify-center shadow-2xl'>
             <h3>{title}</h3>
           </div>
 
-          <div className='w-[400px] h-[220px] bg-[#f6f6f6] text-center flex justify-center items-center'>
+          <div className='w-[350px] h-[220px] bg-[#f6f6f6] text-center flex justify-center items-center'>
             <p className="w-[85%] text-[1.1rem]">{description}</p>
           </div>
 
@@ -68,7 +68,7 @@ export function AppleCardsCarouselDemo() {
     <div className="p-4 flex flex-col items-center">
       <h2 className="text-[4rem] sm:text-[6rem] font-semibold text-center">Our Services</h2>
       <div className="w-[400px] sm:w-[600px] h-[7px] bg-[#5a8495] mb-[50px] ml-[10px] "></div>
-        <div className="flex flex-wrap gap-4 justify-evenly p-4">
+        <div className="flex flex-wrap gap-4 justify-center sm:justify-evenly  p-4">
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20200605_142432.jpg"
             title="Custom Kitchens"

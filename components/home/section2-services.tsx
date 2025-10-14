@@ -53,7 +53,7 @@ export function AppleCardsCarouselDemo() {
           </div>
 
           <Link href={link}>
-            <button className='absolute left-[170px] top-[460px] rounded-full bg-yellow-400 w-[70px] h-[70px] flex justify-center items-center hover:cursor-pointer hover:bg-white hover:border-3 hover:border-black'><ArrowRight size={30} /></button>
+            <button className='absolute left-[145px] top-[460px] rounded-full bg-yellow-400 w-[70px] h-[70px] flex justify-center items-center hover:cursor-pointer hover:bg-white hover:border-3 hover:border-black'><ArrowRight size={30} /></button>
           </Link>
 
       </div>

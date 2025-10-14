@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import { Dot } from "lucide-react";
-import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import {motion} from "motion/react"
 
@@ -12,9 +11,7 @@ import {motion} from "motion/react"
 interface ServiceCardProps {
   image: string;
   title: string;
-  item1: string;
-  item2: string;
-  item3: string;
+  description: string;
   link: string;
 }
 
@@ -28,7 +25,7 @@ export function AppleCardsCarouselDemo() {
 
 
 
-  const ServiceCard = ({image , title, item1, item2, item3, link}: ServiceCardProps) => {
+  const ServiceCard = ({image , title, description, link}: ServiceCardProps) => {
     return (
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -36,53 +33,32 @@ export function AppleCardsCarouselDemo() {
         transition={{ duration: 0.9, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-      <div className="w-[400px] sm:w-[450px] h-[725px] rounded-3xl shadow-2xl border-1 border-gray-200 mb-[50px]">
-        <div className="relative w-[400px] sm:w-[450px] h-[300px] rounded-t-3xl border-r-1 border-l-1 overflow-hidden">
-          <Image
-            src={image}
-            alt="Cabinet"
-            fill
-            className="object-cover"
-          />
-        </div>
+      <div className='relative w-[400px] h-[500px] flex flex-col ml-[50px] mb-[50px]'>
 
-        <h3 className=" text-[2.5rem] font-bold p-4 text-[#5a8495]">{title}</h3>
-
-          <div className="flex items-center ml-[15px]">
-            <Dot size={70}/>
-            <p className="text-[1.2rem]">{item1}</p>
+          <div className='relative w-[400px] h-[280px] overflow-hidden group'>
+              <Image
+                src={image}
+                alt="Cabinet"
+                fill
+                className="object-cover transition-transform duration-800 ease-in-out group-hover:scale-110"
+              />
           </div>
 
-          <div className="flex items-center ml-[15px]">
-            <Dot size={70}/>
-            <p className="text-[1.2rem]">{item2}</p>
+          <div className='absolute left-1/2 top-[280px] -translate-x-1/2 -translate-y-1/2 bg-[#fef9f5] w-[340px] h-[70px] text-center font-bold text-[1.5rem] flex items-center justify-center shadow-2xl'>
+            <h3>{title}</h3>
           </div>
 
-          <div className="flex items-center ml-[15px]">
-            <Dot size={70}/>
-            <p className="text-[1.2rem]">{item3}</p>
+          <div className='w-[400px] h-[220px] bg-[#f6f6f6] text-center flex justify-center items-center'>
+            <p>{description}</p>
           </div>
 
-          <Link href={link} >
-          <Button className="
-            ml-[25px] 
-            mt-[25px] 
-            mb-[25px]
-            w-[200px] 
-            h-[55px] 
-            text-[1.6rem] 
-            rounded-3xl 
-            font-bold 
-          bg-[#5a8495]
-          hover:bg-white 
-          hover:text-[#5a8495]
-          hover:border-[#5a8495]
-            hover:border-2
-            hover:cursor-pointer
-            ">Learn More</Button>
+          <Link href={link}>
+            <button className='absolute left-[170px] top-[460px] rounded-full bg-yellow-400 w-[70px] h-[70px] flex justify-center items-center hover:cursor-pointer hover:bg-white hover:border-3 hover:border-black'><ArrowRight size={30} /></button>
           </Link>
-        
+
       </div>
+        
+
       </motion.div>
     )
   }
@@ -96,54 +72,42 @@ export function AppleCardsCarouselDemo() {
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20200605_142432.jpg"
             title="Custom Kitchens"
-            item1="Premium wood and finishes"
-            item2="Designed for your lifestyle"
-            item3="Built to last for decades"
+            description="Design your dream kitchen with Cabinetry by Wettach, custom cabinets crafted to reflect your style and elevate your space."
             link="/kitchen"
           />
 
           <ServiceCard 
             image="https://cloudphotosone.s3.us-east-1.amazonaws.com/closet.jpg"
             title="Closet Systems"
-            item1="Maximize storage space"
-            item2="Custom shelving & layouts"
-            item3="Organized and functional design"
+            description="Maximize storage space"
             link="/closets"
           />
 
           <ServiceCard 
             image="/images/outdoor.jpg"
             title="Outdoor Cabinets"
-            item1="Weather-resistant materials"
-            item2="Stylish outdoor storage"
-            item3="Perfect for kitchens & patios"
+            description="Weather-resistant materials"
             link="/out-door-cabinets"
           />
 
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20230906_105706.jpg"
             title="Built-In Systems"
-            item1="Seamless integration with rooms"
-            item2="Space-saving solutions"
-            item3="Custom-fit to your home"
+            description="Seamless integration with rooms"
             link="/entertainment-systems"
           />
 
           <ServiceCard 
             image="https://cloudphotosone.s3.us-east-1.amazonaws.com/finishes3.jpg"
             title="Yorktowne Dealer"
-            item1="Wide selection of styles"
-            item2="Trusted Yorktowne quality"
-            item3="Expert guidance on finishes"
+            description="Wide selection of styles"
             link="/kitchen"
           />
 
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20180919_105533.jpg"
-            title="Careers"
-            item1="Join a skilled team"
-            item2="Hands-on craftsmanship"
-            item3="Opportunities for growth"
+            title="Work For Us"
+            description="Join a skilled team"
             link="/work-with-us"
           />
   

@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { BriefcaseBusiness, MapPin, User } from "lucide-react";
+import { BriefcaseBusiness, MapPin, User, ArrowRight } from "lucide-react";
 
 
 const currentYear = new Date().getFullYear()
@@ -18,19 +18,56 @@ const Footer = () => {
             </div>
             <div className=" text-[#e8e8e8] mx-auto">
                 <p className="font-bold mb-[20px] text-[2rem] mt-[50px]">About</p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='about'>Services</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='about'>Locations</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='about'>About</Link></p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/about" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                    Services
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/about" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                    Locations
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/about" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                    About
+                </Link>
+                </p>
             </div>
-            <div className="mx-auto text-[#e8e8e8] ">
-                <p className=" text-[#e8e8e8] font-bold mb-[20px] text-[2rem] mt-[50px]">Quick Links</p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='kitchen'>Kitchens</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='closets'>Closet</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='out-door-cabinets'>Out Door Cabinets</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='entertainment-systems'>Entertainment systems</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='work-with-us'>Hiring</Link></p>
-                <p className="hover:text-[#5a8495] hover:cursor-pointer text-[1.2rem] font-semibold"><Link href='contact-us'>Contact</Link></p>
+            <div className=" text-[#e8e8e8] mx-auto">
+                <p className="font-bold mb-[20px] text-[2rem] mt-[50px] text-start">Quick Links</p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/kitchen" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                    Kitchens
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/closets" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                    Closet
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/out-door-cabinets" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                Out Door Cabinets
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/entertainment-systems" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                Entertainment systems
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/work-with-us" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                Hiring
+                </Link>
+                </p>
+                <p className="text-[1.2rem] font-semibold cursor-pointer">
+                <Link href="/contact-us" className="group flex items-center transition-colors duration-300 hover:text-[#5a8495]">
+                Contact
+                </Link>
+                </p>
             </div>
+            
 
             <div className="mx-auto">
                 <p className=" text-[#e8e8e8] dark:text-gray-300 font-bold mb-[20px] mt-[50px] text-[2rem]">Contact</p>

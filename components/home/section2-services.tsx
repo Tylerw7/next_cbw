@@ -67,7 +67,7 @@ export function AppleCardsCarouselDemo() {
   return (
     <div className="p-4 flex flex-col items-center">
       <h2 className="text-[4rem] sm:text-[6rem] font-semibold text-center">Our Services</h2>
-      <div className="w-[400px] sm:w-[600px] h-[7px] bg-[#5a8495] mb-[50px] ml-[10px] "></div>
+      <div className="w-[400px] sm:w-[600px] h-[7px] bg-[#5a8495] mb-[100px] ml-[10px] "></div>
         <div className="flex flex-wrap gap-4 justify-center sm:justify-evenly  p-4">
           <ServiceCard 
             image="https://cabinetrybywettach.s3.us-east-1.amazonaws.com/20200605_142432.jpg"

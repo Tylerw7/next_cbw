@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { BriefcaseBusiness, MapPin, User, ArrowRight } from "lucide-react";
+import { BriefcaseBusiness, MapPin, User } from "lucide-react";
 
 
 const currentYear = new Date().getFullYear()

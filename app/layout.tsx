@@ -74,6 +74,7 @@ const globalSchema = {
         className={`${raleway.variable} antialiased`}
       >
         {children}
+        <script src="https://cbw-rag-frontend.vercel.app/widget" ></script>
       </body>
     </html>
   );

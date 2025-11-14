@@ -118,7 +118,7 @@ const Footer = () => {
                     </div>
                     <div className="text-start">
                         <h2 className="font-bold text-[1.2rem] text-[#a8a8a8]">Phone</h2>
-                        <p className="text-[#e8e8e8] font-bold text-[1.2rem]">941-232-2817</p>
+                        <p className="text-[#e8e8e8] font-bold text-[1.2rem]">941-260-0483</p>
                     </div>
                  </div>
                 </div>

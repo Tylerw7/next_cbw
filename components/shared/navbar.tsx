@@ -68,7 +68,7 @@ const NavBar = () => {
                     <MenuBar />
                     <div>
                         <Link href='contact-us'>
-                        <Button className=" rounded-2xl bg-[#ffd21e] text-black text-[1.5rem] tracking-wider font-bold hover:cursor-pointer hover:bg-amber-200 hover:border-amber-300 hover:border-2">Contact</Button>
+                        <Button className="w-[180px] h-[50px] rounded-none bg-[#ffd21e] text-black text-[1.5rem] tracking-wider font-bold hover:cursor-pointer hover:bg-amber-200 hover:border-amber-300 hover:border-2">Contact</Button>
                         </Link>
                     </div>
                     </>

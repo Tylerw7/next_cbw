@@ -5,7 +5,11 @@ import SarasotaHero from '@/components/locations/sarasota/sarasota_hero'
 import React from 'react'
 import Script from 'next/script';
 import CallToAction from '@/components/locations/sarasota/call-to-action';
-import { ArrowRight } from 'lucide-react';
+import SarasotaAboutSection from '@/components/locations/sarasota/sarasota-about-section';
+import ServicesSection from '@/components/locations/sarasota/service-section-sarasota';
+import GallerySection from '@/components/locations/sarasota/gallery-ssarasota';
+import FAQSection from '@/components/locations/sarasota/faq-sarasota';
+import QuickContactBar from '@/components/locations/sarasota/quick-contact-bar-sarasota';
 
 
 const sarasota = () => {
@@ -61,25 +65,13 @@ const sarasota = () => {
   return (
     <>
     <SarasotaHero />
+    <SarasotaAboutSection />
+    <ServicesSection />
+    <GallerySection />
+    <FAQSection />
     <CallToAction />
+    <QuickContactBar />
 
-    <div className='relative w-[400px] h-[500px] bg-blue-200 flex flex-col ml-[50px] mb-[50px]'>
-
-      <div className='w-[400px] h-[280px] bg-amber-500'>
-
-      </div>
-
-      <div className='absolute left-1/2 top-[280px] -translate-x-1/2 -translate-y-1/2 bg-purple-600 w-[340px] h-[70px]'>
-        
-      </div>
-
-      <div className='w-[400px] h-[220px] bg-green-300'>
-        
-      </div>
-
-      <button className='absolute left-[170px] top-[472px] rounded-full bg-yellow-400 w-[50px] h-[50px] flex justify-center items-center'><ArrowRight /></button>
-
-    </div>
     
 
     <Script 

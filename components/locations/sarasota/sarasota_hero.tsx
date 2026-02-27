@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
-import Image from "next/image";
+//import Image from "next/image";
 import { motion } from "motion/react";
 
 
@@ -40,80 +40,64 @@ const SarasotaHero = () => {
 
     return ( 
         <>
-    { isMedium ? (
-    <div className="relative overflow-hidden p-[10px] w-full h-[85vh] bg-cover bg-center flex flex-col justify-center items-start text-center" style={{ backgroundImage: 'url("/images/Sarasota-hero.jpg")' }}>
-      
-        {/* Content */}
-        <div className="w-[45vw] flex flex-col ">
-           <motion.div
-            initial={{ opacity: 0, y: 50}}
-            animate={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.8, ease: "easeOut"}}
-           >
-            <h1 className={raleway.className + " text-[3.5rem] pl-[50px] font-bold text-start"}>Custom Kitchen & Bathroom Cabinets in Sarasota, FL</h1>
-            </motion.div> 
-        </div>
-        <div className="w-[175px] h-[7px] bg-[#5a8495] ml-[50px] mt-[25px]"></div>
-          <motion.div
-            initial={{ opacity: 0, y: 50}}
-            animate={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.8, ease: "easeOut"}}
-           >
-            <p className={raleway.className + " ml-[50px] mt-[25px] text-[1.5rem] text-start w-[45vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
-           </motion.div>
-        <Button className="
-            ml-[50px] 
-            mt-[50px] 
-            w-[225px] 
-            h-[60px] 
-            text-[1.6rem] 
-            rounded-3xl 
-            font-bold 
-          bg-[#5a8495]
-          hover:bg-white 
-          hover:text-[#5a8495]
-          hover:border-[#5a8495]
-            hover:border-2
-            hover:cursor-pointer
-            ">Get A Quote</Button>
-    </div>
-     ) : (
-        <>
-            <div className=" flex flex-col justify-center items">
-                <h1 className={raleway.className + " text-[3.5rem] m-auto font-bold text-start w-[85vw]"}>Custom Kitchen & Bathroom Cabinets in Sarasota, FL</h1>
-                <p className={raleway.className + " m-auto mt-[20px] text-[1.5rem] text-start w-[85vw]"}>We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.</p>
-                <Button className="
-                    ml-[50px] 
-                    mt-[50px] 
-                    mb-[50px]
-                    w-[225px] 
-                    h-[60px] 
-                    text-[1.6rem] 
-                    rounded-3xl 
-                    font-bold 
-                bg-[#5a8495]
-                hover:bg-white 
-                hover:text-[#5a8495]
-                hover:border-[#5a8495]
-                    hover:border-2
-                    hover:cursor-pointer
-                    ">Get A Quote</Button>
+            {isMedium ? (
+                <div className="relative overflow-hidden w-full h-[90vh] bg-cover bg-center flex flex-col justify-center items-start" style={{ backgroundImage: 'url("/images/Sarasota-hero.jpg")' }}>
+                    <div className="absolute inset-0 bg-gradient-to-r from-whitw/60 via-white/40 to-transparent"></div>
+                    
+                    <div className="relative z-10 max-w-7xl mx-auto px-12 w-full">
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="max-w-2xl"
+                        >
+                            <div className="inline-block bg-[#5a8495] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                                Serving Sarasota & Surrounding Areas
+                            </div>
+                            <h1 className={raleway.className + " text-6xl font-bold leading-tight mb-6"}>
+                                Custom Kitchen & Bathroom Cabinets in Sarasota, FL
+                            </h1>
+                            <div className="w-24 h-1.5 bg-[#ffd21e] mb-6"></div>
+                            <p className={raleway.className + " text-xl text-muted-foreground mb-8 leading-relaxed"}>
+                                We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.
+                            </p>
+                            <div className="flex gap-4">
+                                <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-6 text-lg rounded-lg font-semibold transition-all">
+                                    Get Free Quote
+                                </Button>
+                                <Button variant="outline" className="border-2 border-white text-[#5a8495] hover:bg-white hover:text-[#5a8495] px-8 py-6 text-lg rounded-lg font-semibold transition-all">
+                                    View Gallery
+                                </Button>
+                            </div>
+                        </motion.div>
                     </div>
-
-                    <div className="m-auto flex justify-center items-center mb-[100px] mt-[50px]">
-                        <div className="w-[75vw] h-[50vh] relative ">
-                            <Image 
-                                src="/images/Sarasota-image.jpg"
-                                alt="Sarasota, FL"
-                                fill
-                                className="object-cover rounded-3xl"
-                                />
-                        </div>
+                </div>
+            ) : (
+                <div className="relative overflow-hidden w-full min-h-[70vh] bg-cover bg-center flex flex-col justify-center items-center py-16" style={{ backgroundImage: 'url("/images/Sarasota-hero.jpg")' }}>
+                    <div className="absolute inset-0 bg-white/50"></div>
+                    <div className="relative z-10 px-6 w-full max-w-2xl text-center">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <div className="inline-block bg-[#5a8495] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                                Serving Sarasota & Surrounding Areas
+                            </div>
+                            <h1 className={raleway.className + " text-4xl font-bold leading-tight mb-4"}>
+                                Custom Kitchen & Bathroom Cabinets in Sarasota, FL
+                            </h1>
+                            <p className={raleway.className + " text-lg mb-8"}>
+                                We specialize in premium cabinetry for every space in your home.
+                            </p>
+                            <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-4 text-lg rounded-lg font-semibold">
+                                Get Free Quote
+                            </Button>
+                        </motion.div>
                     </div>
-                </>
-     )
-    }
-    </>
+                </div>
+            )}
+        </>
      );
 }
  

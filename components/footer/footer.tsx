@@ -12,9 +12,10 @@ const Footer = () => {
     return ( 
         <footer className="w-[100vw] flex flex-col bg-[#1f333a]">
             <div className="w-full flex flex-col sm:flex-row gap-4 sm:gap-8 p-4 text-center">
-            <div className="m-auto flex gap-4 justify-center items-center">
+            <div className="m-auto flex flex-col justify-center items-start">
                 <Image src="/images/cbw_logo_blue.png" width={100} height={100} alt="logo" />
-                <h2 className="font-bold text-[1.5rem] text-[#e8e8e8]">Cabinetry By Wettach</h2>
+                <h2 className="font-bold text-[1.8rem] text-[#e8e8e8]">Cabinetry By Wettach</h2>
+                <p className="w-[250px] text-[#e8e8e8] text-start">Custom cabinetry built with precision, quality materials, and timeless design.</p>
             </div>
             <div className=" text-[#e8e8e8] mx-auto">
                 <p className="font-bold mb-[20px] text-[2rem] mt-[50px]">About</p>

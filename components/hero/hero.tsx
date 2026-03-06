@@ -35,7 +35,7 @@ const Hero = () => {
         >
           <div className="h-px w-10 bg-amber-400" />
           <span className="text-amber-400 text-xs font-semibold tracking-[0.25em] uppercase">
-            Handcrafted in the Hudson Valley
+            Handcrafted in Sarasota, FL
           </span>
         </motion.div>
 

@@ -115,7 +115,7 @@ const NavBar = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         href="/"
-                        className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
+                        className="text-[18px] font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
                       >
                         Home
                       </Link>
@@ -123,7 +123,7 @@ const NavBar = () => {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-sm font-medium text-slate-600 hover:text-slate-900 bg-transparent hover:bg-slate-50 data-[state=open]:bg-slate-50 px-3 py-2 h-auto">
+                    <NavigationMenuTrigger className="text-[18px] font-medium text-slate-600 hover:text-slate-900 bg-transparent hover:bg-slate-50 data-[state=open]:bg-slate-50 px-3 py-2 h-auto">
                       Kitchens
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -174,7 +174,7 @@ const NavBar = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         href="/about"
-                        className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
+                        className="text-[18px] font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
                       >
                         About
                       </Link>
@@ -185,7 +185,7 @@ const NavBar = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         href="/contact-us"
-                        className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
+                        className="text-[18px] font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
                       >
                         Contact
                       </Link>
@@ -196,7 +196,7 @@ const NavBar = () => {
               </NavigationMenu>
 
               <Link href="/contact-us">
-                <Button className="bg-slate-900 hover:bg-slate-700 text-amber-400 font-semibold text-xs tracking-widest uppercase rounded-sm px-6 py-2.5 h-auto transition-all duration-200 hover:-translate-y-px">
+                <Button className="bg-slate-900 hover:bg-slate-700 text-amber-400 font-semibold text-sm tracking-widest uppercase rounded-sm px-6 py-2.5 h-auto transition-all duration-200 hover:-translate-y-px">
                   Get a Quote
                 </Button>
               </Link>

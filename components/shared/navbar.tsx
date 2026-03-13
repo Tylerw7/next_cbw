@@ -185,7 +185,7 @@ const NavBar = () => {
                     <NavigationMenuLink asChild>
                       <Link
                         href="/contact-us"
-                        className="text-[18px] font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
+                        className="text-[18px] font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50 "
                       >
                         Contact
                       </Link>

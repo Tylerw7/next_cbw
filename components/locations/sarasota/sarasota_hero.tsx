@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Raleway } from "next/font/google";
 //import Image from "next/image";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 
 
@@ -41,7 +42,7 @@ const SarasotaHero = () => {
     return ( 
         <>
             {isMedium ? (
-                <div className="relative overflow-hidden w-full h-[90vh] bg-cover bg-center flex flex-col justify-center items-start" style={{ backgroundImage: 'url("/images/Sarasota-hero.jpg")' }}>
+                <div className="relative overflow-hidden w-full h-[90vh] bg-cover bg-center flex flex-col justify-center items-start mt-[50px]" style={{ backgroundImage: 'url("/images/Sarasota-hero.jpg")' }}>
                     <div className="absolute inset-0 bg-gradient-to-r from-whitw/60 via-white/40 to-transparent"></div>
                     
                     <div className="relative z-10 max-w-7xl mx-auto px-12 w-full">
@@ -51,9 +52,7 @@ const SarasotaHero = () => {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="max-w-2xl"
                         >
-                            <div className="inline-block bg-[#5a8495] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                                Serving Sarasota & Surrounding Areas
-                            </div>
+                            
                             <h1 className={raleway.className + " text-6xl font-bold leading-tight mb-6"}>
                                 Custom Kitchen & Bathroom Cabinets in Sarasota, FL
                             </h1>
@@ -62,12 +61,11 @@ const SarasotaHero = () => {
                                 We specialize in premium cabinetry for every space in your home, from kitchens and bathrooms to custom built-in closets, entertainment centers, shelving, and more.
                             </p>
                             <div className="flex gap-4">
-                                <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-6 text-lg rounded-lg font-semibold transition-all">
+                                <Link href="/contact-us">
+                                <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-6 text-lg rounded-sm font-semibold transition-all hover:cursor-pointer">
                                     Get Free Quote
                                 </Button>
-                                <Button variant="outline" className="border-2 border-white text-[#5a8495] hover:bg-white hover:text-[#5a8495] px-8 py-6 text-lg rounded-lg font-semibold transition-all">
-                                    View Gallery
-                                </Button>
+                                </Link>
                             </div>
                         </motion.div>
                     </div>
@@ -81,18 +79,18 @@ const SarasotaHero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="inline-block bg-[#5a8495] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                                Serving Sarasota & Surrounding Areas
-                            </div>
+                            
                             <h1 className={raleway.className + " text-4xl font-bold leading-tight mb-4"}>
                                 Custom Kitchen & Bathroom Cabinets in Sarasota, FL
                             </h1>
                             <p className={raleway.className + " text-lg mb-8"}>
                                 We specialize in premium cabinetry for every space in your home.
                             </p>
-                            <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-4 text-lg rounded-lg font-semibold">
+                            <Link href="/contact-us">
+                            <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-4 text-lg rounded-sm font-semibold">
                                 Get Free Quote
                             </Button>
+                            </Link>
                         </motion.div>
                     </div>
                 </div>

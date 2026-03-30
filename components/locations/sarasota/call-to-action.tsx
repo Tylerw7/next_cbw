@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 //import Link from "next/link"
 import { Raleway } from "next/font/google";
 import { motion } from "motion/react"
+import Link from "next/link";
 
 
 
@@ -28,10 +29,12 @@ const CallToAction = () => {
                             Schedule your free consultation today and let&apos;s bring your vision to life with custom cabinetry designed just for you.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Button className="bg-[#ffd21e] hover:bg-[#ffdb4d] text-black px-10 py-7 text-lg rounded-lg font-bold shadow-lg">
+                            <Link href="/contact-us">
+                            <Button className="bg-[#ffd21e] hover:bg-[#ffdb4d] text-black px-10 py-7 text-lg rounded-lg font-bold shadow-lg hover:cursor-pointer">
                                 Get Free Quote
                             </Button>
-                            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#5a8495] px-10 py-7 text-lg rounded-lg font-semibold">
+                            </Link>
+                            <Button variant="outline" className="border-2 border-white text-[#5a8495] hover:bg-white hover:cursor-pointer px-10 py-7 text-lg rounded-lg font-semibold">
                                 Call: 941-232-2817
                             </Button>
                         </div>

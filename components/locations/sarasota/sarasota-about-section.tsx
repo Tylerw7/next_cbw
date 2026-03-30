@@ -4,6 +4,7 @@ import {motion} from "motion/react"
 import {Check} from "lucide-react"
 import { Button } from '@/components/ui/button'
 import { Raleway } from "next/font/google";
+import Link from 'next/link'
 
 
 const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
@@ -60,9 +61,11 @@ const SarasotaAboutSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-6 text-lg rounded-lg">
+                        <Link href="/about">
+                        <Button className="bg-[#5a8495] hover:bg-[#4a7485] text-white px-8 py-6 text-lg rounded-sm hover:cursor-pointer">
                             Learn More About Us
                         </Button>
+                        </Link>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}

@@ -36,14 +36,6 @@ const FAQSection = () => {
             answer: "Yes! We manage everything from design and material selection to demolition, installation, and final touches. We can also coordinate with other trades like plumbers and electricians if needed."
         },
         {
-            question: "What warranty do you offer on your work?",
-            answer: "We stand behind our craftsmanship with a comprehensive warranty. Cabinet construction is covered for 5 years, and installation workmanship is guaranteed for 2 years."
-        },
-        {
-            question: "How much does custom cabinetry cost?",
-            answer: "Pricing varies based on materials, size, and complexity. Kitchen cabinets typically range from $8,000-$25,000+, while bathroom vanities start around $2,000. We'll provide a detailed quote tailored to your project."
-        },
-        {
             question: "Do you work in areas outside of Sarasota?",
             answer: "Yes! While we're based in Sarasota, we serve the entire surrounding area including Bradenton, Venice, Lakewood Ranch, and Siesta Key."
         }

@@ -1,6 +1,5 @@
 import React from 'react'
 import {MapPin, Phone, Clock} from "lucide-react"
-import Link from 'next/link'
 import { Raleway } from "next/font/google";
 import { motion } from "motion/react"
 
@@ -33,9 +32,7 @@ const QuickContactBar = () => {
                         </div>
                         <h3 className="font-bold text-xl mb-3">Location</h3>
                         <p className="text-gray-700 mb-4">1746 10th Way Unit B<br />Sarasota, FL 34236</p>
-                        <Link href="#" className="text-[#5a8495] font-semibold hover:underline">
-                            Get Directions →
-                        </Link>
+                        
                     </motion.div>
 
                     <motion.div
@@ -69,7 +66,7 @@ const QuickContactBar = () => {
                         <p className="text-gray-700">
                             Monday - Friday<br />
                             8:00 AM - 5:00 PM<br />
-                            <span className="text-sm mt-2 block">Weekends by appointment</span>
+                            <span className="text-md font-bold text-red-400 mt-2 block">**By appointment only**</span>
                         </p>
                     </motion.div>
                 </div>

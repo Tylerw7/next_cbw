@@ -6,10 +6,11 @@ import React from 'react'
 import Script from 'next/script';
 import CallToAction from '@/components/locations/sarasota/call-to-action';
 import SarasotaAboutSection from '@/components/locations/sarasota/sarasota-about-section';
-import ServicesSection from '@/components/locations/sarasota/service-section-sarasota';
-import GallerySection from '@/components/locations/sarasota/gallery-ssarasota';
+import { ServicesSection } from '@/components/locations/sarasota/service-section-sarasota';
+//import GallerySection from '@/components/locations/sarasota/gallery-ssarasota';
 import FAQSection from '@/components/locations/sarasota/faq-sarasota';
 import QuickContactBar from '@/components/locations/sarasota/quick-contact-bar-sarasota';
+import WhyChooseUsSarasota from '@/components/locations/sarasota/sarasotaWhyChoose';
 
 
 const sarasota = () => {
@@ -67,7 +68,8 @@ const sarasota = () => {
     <SarasotaHero />
     <SarasotaAboutSection />
     <ServicesSection />
-    <GallerySection />
+    {/* <GallerySection /> */}
+    <WhyChooseUsSarasota />
     <FAQSection />
     <CallToAction />
     <QuickContactBar />
